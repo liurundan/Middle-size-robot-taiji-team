@@ -1,0 +1,452 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TeamControl.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TeamControl.ico"
+IDI_DISPLAYER           ICON    DISCARDABLE     "res\\Displayer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TeamControl"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TeamControl 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TEAMCONTROL_DIALOG DIALOGEX 0, 0, 234, 48
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TeamControl"
+MENU IDR_MENU1
+FONT 9, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Spin1",IDC_COMM_RATE_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,98,15,
+                    11,18
+    EDITTEXT        IDC_COMMRATE_EDIT,56,18,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Rate:",IDC_STATIC,13,20,21,8
+    GROUPBOX        "Communication",IDC_STATIC,7,5,125,29
+    COMBOBOX        IDC_REFERENCE_COMBO,138,17,85,87,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Select Robot",IDC_STATIC,134,5,92,29
+END
+
+IDD_REFBOXWIDGET DIALOGEX 0, 0, 245, 237
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RefereeBoxWidget"
+FONT 9, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OwnKickOff",IDC_OWNKICKOFF,18,34,61,14
+    PUSHBUTTON      "OwnThrowIn",IDC_OWNTHROWIN,18,49,61,14
+    PUSHBUTTON      "OwnGoalKick",IDC_OWNGOALKICK,18,64,61,14
+    PUSHBUTTON      "OwnCornerKick",IDC_OWNCORNERKICK,18,79,61,14
+    PUSHBUTTON      "OwnFreeKick",IDC_OWNFREEKICK,18,94,61,14
+    PUSHBUTTON      "OwnPenaltyKick",IDC_OWNPENALTYKICK,18,109,61,14
+    DEFPUSHBUTTON   "Stop",IDC_STOP,92,34,61,20
+    PUSHBUTTON      "Start",IDC_START,92,57,61,20
+    PUSHBUTTON      "Ready",IDC_READY,92,80,61,20
+    PUSHBUTTON      "DropBall",IDC_DROPBALL,92,103,61,20
+    PUSHBUTTON      "OppKickOff",IDC_OPPKICKOFF,166,34,61,14
+    PUSHBUTTON      "OppThrowIn",IDC_OPPTHROWIN,166,49,61,14
+    PUSHBUTTON      "OppGoalKick",IDC_OPPGOALKICK,166,64,61,14
+    PUSHBUTTON      "OppCornerKick",IDC_OPPCORNERKICK,166,79,61,14
+    PUSHBUTTON      "OppFreeKick",IDC_OPPFREEKICK,166,94,61,14
+    PUSHBUTTON      "OppPenaltyKick",IDC_OPPPENALTYKICK,166,109,61,14
+    PUSHBUTTON      "ChangeHalf",IDC_CHANGEHALF,94,139,61,14,BS_CENTER | 
+                    BS_VCENTER
+    DEFPUSHBUTTON   "ChangeLabel",IDC_CHANGELABEL,94,156,61,14
+    GROUPBOX        "GDUT",IDC_STATIC,8,20,81,113
+    GROUPBOX        "Opponent",IDC_STATIC,156,20,81,113
+    GROUPBOX        "",IDC_STATIC,8,131,229,44,0,WS_EX_TRANSPARENT
+    LTEXT           "CurrentRefereeState:",IDC_STATIC,9,5,81,8
+    GROUPBOX        "",IDC_STATIC,8,172,229,24,0,WS_EX_TRANSPARENT
+    GROUPBOX        "RefereeBox",IDC_STATIC,8,197,229,27,0,WS_EX_TRANSPARENT
+    CTEXT           "Score",IDC_STATIC,92,181,61,10
+    LTEXT           "IP:",IDC_STATIC,85,209,13,8
+    LTEXT           "localhost",IDC_REFBOX_IP,99,209,81,8
+    CONTROL         "Connect",IDC_REFBOXCONNECT_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,186,209,44,10
+END
+
+IDD_REMOTEROBOTWIDGET DIALOGEX 0, 0, 229, 101
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Robot"
+FONT 9, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Connect",IDC_CONNECTROBOT_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,154,7,44,10
+    CONTROL         "Messageboard",IDC_MESSAGE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,45,61,10
+    CONTROL         "Joystick",IDC_JOYSTICK_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,57,48,10
+    CONTROL         "Activate",IDC_ACTIVATE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,69,48,10
+    COMBOBOX        IDC_PLAYER_SELECT,116,43,73,70,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_ROLE_SELECT,116,57,73,102,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REFSTATE_SELECT,101,71,88,94,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,64,1,160,18,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Team",IDC_CHANGETEAM_BUTTON,189,43,35,14
+    LTEXT           "PlayerType:",IDC_STATIC,72,44,43,8
+    LTEXT           "Role:",IDC_STATIC,72,58,21,8
+    LTEXT           "Referee\nState:",IDC_STATIC,72,70,30,21
+    LTEXT           "IP:",IDC_STATIC,73,7,13,8
+    LTEXT           "Static",IDC_IP_EDIT,87,7,54,8
+    GROUPBOX        "",IDC_STATIC,4,39,66,45
+END
+
+IDD_JOYSTICKDIALOG DIALOG DISCARDABLE  0, 0, 98, 52
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "JoystickDialog"
+FONT 10, "System"
+BEGIN
+END
+
+IDD_REALROBOTDATA DIALOG DISCARDABLE  0, 0, 355, 105
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RobotData"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "0",IDC_VCC,9,87,109,8
+    LTEXT           "0",IDC_MOTORVEL_0,120,87,110,8
+    LTEXT           "Static",IDC_ROBOT_VELOCITY,241,87,103,8
+END
+
+IDD_FIELDWIDGET DIALOG DISCARDABLE  0, 0, 272, 228
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Playing field"
+FONT 10, "System"
+BEGIN
+END
+
+IDD_COACHWIDGET DIALOGEX 0, 0, 181, 131
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Traniner"
+FONT 9, "MS Sans Serif"
+BEGIN
+    CONTROL         "Ball Possession",IDC_OWNS_BALL_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,97,14,76,10
+    CONTROL         "Ball Position",IDC_COMM_BALL_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,97,25,68,10
+    CONTROL         "Broadcast",IDC_BROADCAST_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,36,52,10
+    COMBOBOX        IDC_POLICY_COMBO,12,29,64,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Communication",IDC_STATIC,93,4,81,45
+    LTEXT           "Role assignment:",IDC_STATIC,13,14,65,8
+    GROUPBOX        "Strategy",IDC_STATIC,7,4,81,45
+    CONTROL         "message",IDC_MESSAGE_EDIT,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_BORDER | WS_GROUP,8,51,166,76,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+END
+
+IDD_MESSAGE_BOARD_DIALOG DIALOGEX 0, 0, 169, 347
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "MessageBoardDialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_MSG,9,9,153,331
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TeamControl Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TeamControl\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TeamControl.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "TeamControl 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TEAMCONTROL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_REFBOXWIDGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_REMOTEROBOTWIDGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 224
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_JOYSTICKDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 91
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_REALROBOTDATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_FIELDWIDGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_COACHWIDGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_MESSAGE_BOARD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_BTN_ZOOMIN
+    BUTTON      ID_BTN_ZOOMOUT
+    BUTTON      ID_BTN_ZOOMALL
+    BUTTON      ID_BTN_ZOOMUNDO
+    BUTTON      ID_BTN_ZOOMREDO
+    BUTTON      ID_BTN_FILPSIDES
+    BUTTON      ID_BTN_FILPGOALS
+    BUTTON      ID_BTN_NEXTREFROBOT
+    BUTTON      ID_BTN_SHOWWMROBOT
+    BUTTON      ID_BTN_SHOWWMBALL
+    BUTTON      ID_BTN_SHOWWMOBSTACLES
+    BUTTON      ID_BTN_SHOWVISLINES
+    BUTTON      ID_BTN_SHOWVISBALL
+    BUTTON      ID_BTN_SHOWVISOBSTACLES
+    BUTTON      ID_BTN_SHOWVISGOALS
+    BUTTON      ID_BIN_SHOWSLPOS
+    BUTTON      ID_BTN_SHOWAUXLINES
+    BUTTON      ID_BTN_SHOWROBOTIDS
+    BUTTON      ID_BTN_SHOWROBOTBALLLINKS
+    BUTTON      ID_BTN_ROBOTTRACE
+    BUTTON      ID_BTN_BALLTRACE
+    BUTTON      ID_BTN_CLEARLINE
+    BUTTON      ID_BTN_CLOCK
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Playingfield",                IDM_PLAYING_FIELD
+    MENUITEM "Trainer",                     IDM_TRAINER
+    MENUITEM "RefereeStates",               IDM_REFEREE_STATES
+    MENUITEM "Robotdata",                   IDM_ROBOT_DATA
+    POPUP "Robots", CHECKED
+    BEGIN
+        MENUITEM "Robot1",                      IDM_ROBOT_REFERCE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TeamControl(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TeamControl.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ImageProcess - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP55.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ImageProcess.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\C++练习\2008中山机器人比赛程序(1205-1207)\ImageProcess\ScanLines.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP55.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56.tmp" with contents
+[
+pdapi.lib imagelib.lib OpenGL32.lib strmbasd.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/ImageProcess.pdb" /machine:I386 /out:"Release/ImageProcess.exe" 
+".\Release\Angle.obj"
+".\Release\ConfigReader.obj"
+".\Release\Frame2D.obj"
+".\Release\geometry.obj"
+".\Release\Time.obj"
+".\Release\Vec.obj"
+".\Release\FileMonitor.obj"
+".\Release\ImageConversion.obj"
+".\Release\RGBImage.obj"
+".\Release\UYVYImage.obj"
+".\Release\YUVImage.obj"
+".\Release\Camera.obj"
+".\Release\FileSource.obj"
+".\Release\UsbCamera.obj"
+".\Release\BallDetector.obj"
+".\Release\ChainCoding.obj"
+".\Release\ColorClasses.obj"
+".\Release\ColorClassifier.obj"
+".\Release\Image.obj"
+".\Release\Image2WorldMapping.obj"
+".\Release\ImageBuffer.obj"
+".\Release\ImageIO.obj"
+".\Release\ImageProcessingMonitor.obj"
+".\Release\ImageProducer.obj"
+".\Release\ImageVarianceFilter.obj"
+".\Release\KoordTransformDortmund.obj"
+".\Release\LineScanning.obj"
+".\Release\MorphologicOperators.obj"
+".\Release\MultiImageProducer.obj"
+".\Release\Painter.obj"
+".\Release\RobotMask.obj"
+".\Release\ScanLines.obj"
+".\Release\YUVLookupTable.obj"
+".\Release\ImageProcess.obj"
+".\Release\ImageProcessDlg.obj"
+".\Release\mscomm.obj"
+".\Release\StdAfx.obj"
+".\Release\DriveVector.obj"
+".\Release\RobotProperties.obj"
+".\Release\RobotsException.obj"
+".\Release\VisibleObject.obj"
+".\Release\OmniRobot.obj"
+".\Release\Robot.obj"
+".\Release\RobotFactory.obj"
+".\Release\ImageProcess.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56.tmp"
+<h3>Output Window</h3>
+Compiling...
+ScanLines.cpp
+D:\C++练习\2008中山机器人比赛程序(1205-1207)\ImageProcess\ScanLines.cpp(1) : warning C4652: compiler option 'Generate Browser Info' inconsistent with precompiled header; current command-line option will override that defined in the precompiled header
+Linking...
+
+
+
+<h3>Results</h3>
+ImageProcess.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OdeServer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Bill\LOCALS~1\Temp\RSP6.tmp" with contents
+[
+/nologo /MDd /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/OdeServer.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\OdeServer_11.1\angle.cpp"
+"D:\OdeServer_11.1\field.cpp"
+"D:\OdeServer_11.1\frame2d.cpp"
+"D:\OdeServer_11.1\main.cpp"
+"D:\OdeServer_11.1\robot.cpp"
+"D:\OdeServer_11.1\v2d.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bill\LOCALS~1\Temp\RSP6.tmp" 
+Creating temporary file "C:\DOCUME~1\Bill\LOCALS~1\Temp\RSP7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib ode.lib drawstuff.lib /nologo /stack:0x10000000 /subsystem:console /incremental:no /pdb:"Release/OdeServer.pdb" /machine:I386 /nodefaultlib:"msvcrt.lib" /out:"Release/OdeServer.exe" 
+.\Release\angle.obj
+.\Release\field.obj
+.\Release\frame2d.obj
+.\Release\main.obj
+.\Release\odesimcomm.obj
+.\Release\robot.obj
+.\Release\udpsocket_ode.obj
+.\Release\v2d.obj
+.\Release\resources.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Bill\LOCALS~1\Temp\RSP7.tmp"
+<h3>Output Window</h3>
+Compiling...
+angle.cpp
+D:\OdeServer_11.1\angle.h(36) : fatal error C1001: INTERNAL COMPILER ERROR
+        (compiler file 'msc1.cpp', line 1786) 
+         Please choose the Technical Support command on the Visual C++ 
+         Help menu, or open the Technical Support help file for more information
+field.cpp
+D:\OdeServer_11.1\include\ode/mass.h(84) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/mass.h(85) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/objects.h(1913) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/objects.h(2057) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\angle.h(36) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+frame2d.cpp
+D:\OdeServer_11.1\angle.h(36) : fatal error C1001: INTERNAL COMPILER ERROR
+        (compiler file 'msc1.cpp', line 1786) 
+         Please choose the Technical Support command on the Visual C++ 
+         Help menu, or open the Technical Support help file for more information
+main.cpp
+D:\OdeServer_11.1\include\ode/mass.h(84) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/mass.h(85) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/objects.h(1913) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/objects.h(2057) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\angle.h(36) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+robot.cpp
+D:\OdeServer_11.1\include\ode/mass.h(84) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/mass.h(85) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/objects.h(1913) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\include\ode/objects.h(2057) : error C2485: 'deprecated' : unrecognized extended attribute
+D:\OdeServer_11.1\angle.h(36) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+v2d.cpp
+D:\OdeServer_11.1\angle.h(36) : fatal error C1001: INTERNAL COMPILER ERROR
+        (compiler file 'msc1.cpp', line 1786) 
+         Please choose the Technical Support command on the Visual C++ 
+         Help menu, or open the Technical Support help file for more information
+执行 cl.exe 时出错.
+Creating command line "bscmake.exe /nologo /o"Release/OdeServer.bsc"  .\Release\angle.sbr .\Release\field.sbr .\Release\frame2d.sbr .\Release\main.sbr .\Release\odesimcomm.sbr .\Release\robot.sbr .\Release\udpsocket_ode.sbr .\Release\v2d.sbr"
+Creating browse info file...
+BSCMAKE: error BK1506 : cannot open file '.\Release\angle.sbr': No such file or directory
+执行 bscmake.exe 时出错.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+OdeServer.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

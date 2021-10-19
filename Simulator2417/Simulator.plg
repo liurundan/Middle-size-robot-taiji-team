@@ -1,0 +1,58 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Simulator - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Simulator.res" /d "_DEBUG" /d "_AFXDLL" "F:\学习文件夹\机器人资料\机器人程序\Simulator2417\Simulator.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13.tmp" with contents
+[
+Winmm.lib OpenGL32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Simulator.pdb" /debug /machine:I386 /out:"Debug/Simulator.exe" /pdbtype:sept 
+".\Debug\Agent.obj"
+".\Debug\ColorClasses.obj"
+".\Debug\Command.obj"
+".\Debug\Display.obj"
+".\Debug\DriveVector.obj"
+".\Debug\ErrorMinimiserSL.obj"
+".\Debug\ErrorMinimiserWorldModel.obj"
+".\Debug\FieldGeometry.obj"
+".\Debug\FieldLUT.obj"
+".\Debug\Geometry.obj"
+".\Debug\LineScanning.obj"
+".\Debug\MessageBoard.obj"
+".\Debug\MyAngle.obj"
+".\Debug\MyTime.obj"
+".\Debug\Objects.obj"
+".\Debug\OdometryContainer.obj"
+".\Debug\RobotPositionKalmanFilter.obj"
+".\Debug\ScanLines.obj"
+".\Debug\Simulator.obj"
+".\Debug\SimulatorDlg.obj"
+".\Debug\SoccerServer.obj"
+".\Debug\SoccerTypes.obj"
+".\Debug\StdAfx.obj"
+".\Debug\update_robot_location.obj"
+".\Debug\VisibleObject.obj"
+".\Debug\VisualContainer.obj"
+".\Debug\VisualPositionOptimiser.obj"
+".\Debug\WorldModel.obj"
+".\Debug\WorldModelHighLevel.obj"
+".\Debug\WorldModelPredict.obj"
+".\Debug\WorldModelTypeBase.obj"
+".\Debug\WorldModelUpdate.obj"
+".\Debug\Simulator.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Simulator.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,39 @@
+52 Error in D:\C++练习\2008中山机器人比赛程序(1205-1207)\RobotControl\AddComUserInterface.cpp, 17: wrong comm_max_fail_count
+startup: all components alive
+average loop time was 64.98 ms
+average image processing time was 0.01 ms
+average world model time was 0.2 ms
+average decision time was 0.02 ms
+average robot communication time was 0.03 ms
+average user interface and communication time was 0.2 ms
+average idle time was 0 ms
+4214 Error in D:\C++练习\2008中山机器人比赛程序(1205-1207)\RobotControl\RobotsUdpCommunicationBuffer.cpp, 369: Status vom CommunicationBuffer :
+e_send_buffer_full             :0
+e_put_to_buffer_full           :0
+e_put_to_buffer_tobig          :0
+e_set_receive_buffer           :0
+e_set_receive_buffer_tobig     :0
+e_get_next_buffer_tobig        :0
+e_receive_unknow_data          :0
+e_receive_data_checksum        :0
+w_receive_to_old       :0
+
+fortlaufende_paketnummer       :0
+fortlaufende_paketnummer_remote:0
+stat_data_send (byte)          :0
+stat_data_receive (byte)       :0
+stat_max_nutzdatenlaenge_send  :0
+stat_max_nutz..laenge_send_art :' '
+stat_max_bufferlaenge_send     :0
+stat_data_send_prio_wichtig    :0
+stat_data_send_prio_normal     :0
+stat_data_send_prio_optional   :0
+
+pakete im _ausgang             :0
+pakete im _eingang             :0
+plaetze die _frei sind         :100
+_wichtig                       :0
+_normal                        :0
+_optional                      :0
+
+
